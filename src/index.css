@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Nunito';
+    src: url('./Fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('./Fonts/Raleway-Bold.ttf');
+}
