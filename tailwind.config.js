@@ -24,10 +24,11 @@ export default {
         'img-bg2': "url('./images/dessert1.jpg')",
         'img-bg3': "url('./images/city1.jpg')",
         'img-bg4': "url('./images/mountains1.jpg')",
-        'img-bg5': "url('./images/mountains3.jpg')"
+        'img-bg5': "url('./images/mountains3.jpg')",
       }
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 }
 

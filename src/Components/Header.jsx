@@ -1,3 +1,6 @@
+import React, { useState } from 'react';
+import Modal from './Modal';
+
 const Header = () => {
 
   const navigation = [
@@ -7,6 +10,16 @@ const Header = () => {
     { name: 'Reviews', href: '#' },
   ]
 
+  const [showModal, setShowModal] = useState(false);
+
+  const handleClick = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div className="bg-white bg-img-bg5 bg-fixed bg-cover bg-bottom">
       <header className="absolute inset-x-0 top-0 z-50">
@@ -15,7 +28,7 @@ const Header = () => {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
-                className="h-5   w-auto"
+                className="h-5 w-auto"
                 src="./src/Logo/Logo2.svg"
                 alt=""
               />
@@ -33,15 +46,16 @@ const Header = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+              <a key={item.name} href={item.href} className="text-base font-semibold leading-6 text-gray-900 hover:text-secondary3">
                 {item.name}
               </a>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-              Log in <span aria-hidden="true">&rarr;</span>
+            <a href="#" className="text-base font-semibold leading-6 text-gray-900" onClick={handleClick}>
+              Log in <span aria-hidden="true"> </span>
             </a>
+            {showModal && <Modal onClose={handleCloseModal}/>}
           </div>
         </nav>
       </header>
