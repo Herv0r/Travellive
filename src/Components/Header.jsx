@@ -5,9 +5,9 @@ const Header = () => {
 
   const navigation = [
     { name: 'Inicio', href: '#' },
-    { name: 'Destinos', href: '#' },
-    { name: 'Galeria', href: '#' },
-    { name: 'Reviews', href: '#' },
+    { name: 'Ofertas', href: '#ofertas' },
+    { name: 'Galeria', href: '#galeria' },
+    { name: 'Reviews', href: '#reviews' },
   ]
 
   const [showModal, setShowModal] = useState(false);
@@ -26,11 +26,11 @@ const Header = () => {
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+              <span className="sr-only">Travellive</span>
               <img
                 className="h-5 w-auto"
                 src="./src/Logo/Logo2.svg"
-                alt=""
+                alt="Travellive"
               />
             </a>
           </div>
@@ -46,7 +46,7 @@ const Header = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-base font-semibold leading-6 text-gray-900 hover:text-secondary3">
+              <a key={item.name} href={item.href} className="text-base font-semibold leading-6 text-gray-900 hover:text-secondary3 ">
                 {item.name}
               </a>
             ))}
@@ -62,7 +62,7 @@ const Header = () => {
 
 
       <div className="relative isolate px-6 pt-0 lg:px-8"> 
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56"> {/* */} 
+        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           </div>
           <div className="text-center">
