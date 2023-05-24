@@ -67,7 +67,7 @@ const Header = () => {
           </div>
           <div className="text-center">
             <h1 className="text-4xl font-Raleway tracking-tight text-black sm:text-6xl">
-            Vive la experiencia de tu vida
+            Descubre el mundo con tus propios ojos
             </h1>
             <p className="font-Nunito mt-6 pt-4 text-lg leading-8 text-primary3">
             Elige tu destino, nosotros nos encargamos del resto
