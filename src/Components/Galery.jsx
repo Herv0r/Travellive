@@ -80,7 +80,7 @@ export default function Galeria() {
                 </div>
   
                 <a
-                  href="#"
+                  href="/galeria"
                   className="inline-block rounded-md border border-transparent bg-secondary3 px-8 py-3 text-center font-medium text-white hover:bg-secondary2"
                 >
                   Ir a Galeria

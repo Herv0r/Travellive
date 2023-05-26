@@ -4,7 +4,7 @@ import Modal from './Modal';
 const Header = () => {
 
   const navigation = [
-    { name: 'Inicio', href: '#' },
+    { name: 'Inicio', href: '/inicio' },
     { name: 'Ofertas', href: '#ofertas' },
     { name: 'Galeria', href: '#galeria' },
     { name: 'Reviews', href: '#reviews' },
@@ -74,7 +74,7 @@ const Header = () => {
             </p>
             <div className="mt-5 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="/inicio"
                 className="rounded-md bg-secondary3 px-3.5 py-2.5 text-sm font-semibold text-primary3 shadow-sm hover:bg-secondary2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary1"
               >
                 Comenzar Aventura 

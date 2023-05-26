@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <nav className="bg-white ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" className="flex items-center">
+        <a href="/" className="flex items-center">
           <img
             src="../src/Logo/Logo2.svg"
             className="h-5 mr-3"
@@ -25,7 +25,7 @@ function NavBar() {
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0">
             <li>
               <a
-                href="#"
+                href="/"
                 className="block py-2 pl-3 pr-4 text-secondary2  hover:text-secondary1 rounded md:bg-transparent md:p-0"
                 aria-current="page"
               >
@@ -34,15 +34,15 @@ function NavBar() {
             </li>
             <li>
               <a
-                href="#"
+                href="/team-section"
                 className="block py-2 pl-3 pr-4 text-secondary2  hover:text-secondary1 rounded md:bg-transparent md:p-0"
               >
-                Reviews
+                Nosotros
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="/404"
                 className="block py-2 pl-3 pr-4 text-secondary2  hover:text-secondary1 rounded md:bg-transparent md:p-0"
               >
                 Acerca
@@ -50,7 +50,7 @@ function NavBar() {
             </li>
             <li>
               <a
-                href="#"
+                href="/404"
                 className="block py-2 pl-3 pr-4 text-secondary2  hover:text-secondary1 rounded md:bg-transparent md:p-0"
               >
                 Ayuda
@@ -92,7 +92,7 @@ function NavBar() {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href="#"
+                        href="/profile"
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
