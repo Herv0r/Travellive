@@ -1,5 +1,6 @@
 import { Fragment, useRef, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
+import { Link } from 'react-router-dom';
 
 
 export default function Modal(props) {
@@ -95,12 +96,9 @@ export default function Modal(props) {
                           </div>
 
                           <div>
-                            <button
-                              type="submit"
-                              className="flex w-full justify-center rounded-md bg-secondary3 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary3"
-                            >
+                            <Link to="/inicio" className="flex w-full justify-center rounded-md bg-secondary3 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary3">
                               Sign in
-                            </button>
+                            </Link>
                           </div>
                         </form>
 
