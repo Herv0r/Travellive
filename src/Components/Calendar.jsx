@@ -39,10 +39,10 @@ export default function Calendar() {
   }
 
   return (
-    <div className="py-16 border">
-      <div className="max-w-md px-4 ml-auto md:max-w-4xl md:px-6"> {/* mx-auto sm:px-7 */}
+    <div className="pt-32 pl-96 ml-78">
+      <div className="max-w-md md:max-w-4xl"> {/* mx-auto sm:px-7 */}
         <div className="md:grid md:grid-cols-2 md:divide-x md:divide-gray-200">
-          <div className="md:pr-14">
+          <div className="border p-10">
             <div className="flex items-center">
               <h2 className="flex-auto font-semibold text-gray-900">
                 {format(firstDayCurrentMonth, 'MMMM yyyy')}

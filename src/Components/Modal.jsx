@@ -50,7 +50,7 @@ export default function Modal(props) {
                           alt="Travellive"
                         />
                         <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-                          Sign in to your account
+                          Ingresar a la cuenta  
                         </h2>
                       </div>
 
@@ -58,7 +58,7 @@ export default function Modal(props) {
                         <form className="space-y-6" action="#" method="POST">
                           <div>
                             <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                              Email address
+                              Email
                             </label>
                             <div className="mt-2">
                               <input
@@ -75,11 +75,11 @@ export default function Modal(props) {
                           <div>
                             <div className="flex items-center justify-between">
                               <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
-                                Password
+                                Contraseña
                               </label>
                               <div className="text-sm">
                                 <a href="#" className="font-semibold text-secondary3 hover:text-secondary2">
-                                  Forgot password?
+                                  ¿Olvidaste la contraseña?
                                 </a>
                               </div>
                             </div>
@@ -97,15 +97,15 @@ export default function Modal(props) {
 
                           <div>
                             <Link to="/inicio" className="flex w-full justify-center rounded-md bg-secondary3 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary3">
-                              Sign in
+                              Ingresar
                             </Link>
                           </div>
                         </form>
 
                         <p className="mt-10 text-center text-sm text-gray-500">
-                          Not a member?{' '}
+                          ¿No eres miembro?{' '}
                           <a href="#" className="font-semibold leading-6 text-secondary3 hover:text-primary1">
-                            Create an account
+                            Crea una cuenta
                           </a>
                         </p>
                       </div>

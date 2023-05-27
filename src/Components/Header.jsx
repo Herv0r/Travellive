@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Modal from './Modal';
+import '../App.css'
 
 const Header = () => {
 
@@ -21,7 +22,7 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-white bg-img-bg5 bg-fixed bg-cover bg-bottom">
+    <div className="">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
@@ -61,7 +62,7 @@ const Header = () => {
       </header>
 
 
-      <div className="relative isolate px-6 pt-0 lg:px-8"> 
+      <div className="relative isolate px-6 pt-0 lg:px-8 bg-white bg-img-bg5 bg-fixed bg-cover bg-bottom imagenFondo"> 
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           </div>
@@ -79,7 +80,7 @@ const Header = () => {
               >
                 Comenzar Aventura 
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-primary3">
+              <a href="#nosotros" className="text-sm font-semibold leading-6 text-primary3">
                 Quienes somos <span aria-hidden="true">→</span>
               </a>
             </div>

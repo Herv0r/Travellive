@@ -6,7 +6,7 @@ const TeamSection = () => {
       name: "Rocío Perea",
       occupation: "UI/UX Designer",
       image:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "../src/Images/Rocio.jpg",
       socialMedia: {
         twitter: "https://twitter.com/janesmith",
         linkedin: "https://www.linkedin.com/in/janesmith",
@@ -18,7 +18,7 @@ const TeamSection = () => {
       occupation:
         "Web Developer, Software Developer, Python developer, Machine Learning",
       image:
-        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "../src/Images/Lucas.jpg",
       socialMedia: {
         twitter: "https://twitter.com/AlbornozLucasA1",
         linkedin: "https://www.linkedin.com/in/albornozlucas",
@@ -27,24 +27,35 @@ const TeamSection = () => {
     },
     {
       name: "Mariana Arias",
-      occupation: "Marketing Specialist",
+      occupation: "UI/UX Designer",
       image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "../src/Images/Mariana.jpg",
       socialMedia: {
         twitter: "https://twitter.com/markjohnson",
         linkedin: "https://www.linkedin.com/in/markjohnson",
         medium: "https://medium.com/markjohnson",
       },
     },
+    {
+      name: "Alvaro Aguilar",
+      occupation: "Game Developer, Software Engineer",
+      image:
+        "../src/Images/Alvarito.png",
+      socialMedia: {
+        twitter: "https://twitter.com/janesmith",
+        linkedin: "https://www.linkedin.com/in/janesmith",
+        dribbble: "https://dribbble.com/janesmith",
+      },
+    },
   ];
 
   return (
-    <section className="py-8">
+    <section className="py-8 border" id='nosotros'>
       <div className="container mx-auto">
-        <h2 className="text-3xl font-semibold text-center mb-8">
+        <h2 className="font-Raleway text-3xl font-semibold text-center mb-8">
           Nuestro Equipo
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
             <div className="bg-white rounded-lg shadow-lg p-6" key={index}>
               <div className="flex items-center justify-center">

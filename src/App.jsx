@@ -2,19 +2,23 @@ import "./App.css";
 import Header from "./Components/Header";
 import Offers from "./Components/Offers";
 import Main from "./Components/Main";
+import Pagination from "./Components/Pagination";
 import Habitaciones from "./Components/Rooms";
 import Companies from "./Components/Companies";
 import Carrusel from "./Components/Carrusel";
 import Galeria from "./Components/Galery";
-import FotosGaleria from "./Components/PhotosGalery";
-import Collection from "./Components/ColectionsGalery";
-import SimpleFooter from "./Components/Footer";
+import PhotosGalery from "./Components/PhotosGalery";
+import CollectionGalery from "./Components/ColectionsGalery";
 import Reviews from "./Components/Reviews";
+import Card from "./Components/Card";
 import Calendar from "./Components/Calendar";
 import NavBar from "./Components/NavBar";
 import Profile from "./Components/ProfileConfig";
 import NotFound from "./Components/404Notfound";
 import TeamSection from "./Components/TeamSection";
+import SimpleFooter from "./Components/Footer";
+import Subscribe from "./Components/Subscribe";
+import ContactForm from "./Components/ContactForm";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -32,7 +36,8 @@ function App() {
                 <Companies />
                 <Galeria />
                 <Reviews />
-                <Calendar />
+                <TeamSection />
+                <Subscribe />
                 <SimpleFooter />
               </>
             }
@@ -48,8 +53,8 @@ function App() {
                   habitaciones
                 </h1>
                 <Habitaciones />
+                <Pagination />
                 <Companies />
-                <Reviews />
                 <SimpleFooter />
               </>
             }
@@ -79,22 +84,23 @@ function App() {
                 <h1 className="text-2xl text-center font-Raleway text-primary1 mt-16">
                   Descubre los destinos más impresionantes del mundo
                 </h1>
-                <FotosGaleria />
-                <Collection />
+                <PhotosGalery />
+                <Pagination />
+                <CollectionGalery />
                 <SimpleFooter />
               </>
             }
           />
 
-          <Route 
-          path="/team-section" 
-          element={
-            <>
-              <NavBar />
-              <TeamSection />
-              <SimpleFooter />
-            </>
-          } />
+          <Route
+            path="/contact"
+            element={
+              <>
+                <NavBar />
+                <ContactForm />
+                <SimpleFooter />
+              </>
+            } />
 
           <Route path="/404" element={<NotFound />} />
         </Routes>

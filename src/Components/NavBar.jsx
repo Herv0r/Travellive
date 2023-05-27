@@ -26,7 +26,7 @@ function NavBar() {
             <li>
               <a
                 href="/"
-                className="block py-2 pl-3 pr-4 text-secondary2  hover:text-secondary1 rounded md:bg-transparent md:p-0"
+                className="block py-2 pl-3 pr-4 text-secondary2  hover:text-secondary3 rounded md:bg-transparent md:p-0"
                 aria-current="page"
               >
                 Inicio
@@ -34,16 +34,16 @@ function NavBar() {
             </li>
             <li>
               <a
-                href="/team-section"
-                className="block py-2 pl-3 pr-4 text-secondary2  hover:text-secondary1 rounded md:bg-transparent md:p-0"
+                href="/galeria"
+                className="block py-2 pl-3 pr-4 text-secondary2  hover:text-secondary3 rounded md:bg-transparent md:p-0"
               >
-                Nosotros
+                Galeria
               </a>
             </li>
             <li>
               <a
                 href="/404"
-                className="block py-2 pl-3 pr-4 text-secondary2  hover:text-secondary1 rounded md:bg-transparent md:p-0"
+                className="block py-2 pl-3 pr-4 text-secondary2  hover:text-secondary3 rounded md:bg-transparent md:p-0"
               >
                 Acerca
               </a>
@@ -51,15 +51,15 @@ function NavBar() {
             <li>
               <a
                 href="/404"
-                className="block py-2 pl-3 pr-4 text-secondary2  hover:text-secondary1 rounded md:bg-transparent md:p-0"
+                className="block py-2 pl-3 pr-4 text-secondary2  hover:text-secondary3 rounded md:bg-transparent md:p-0"
               >
                 Ayuda
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-secondary2  hover:text-secondary1 rounded md:bg-transparent md:p-0"
+                href="/contact"
+                className="block py-2 pl-3 pr-4 text-secondary2  hover:text-secondary3 rounded md:bg-transparent md:p-0"
               >
                 Contacto
               </a>
@@ -107,7 +107,7 @@ function NavBar() {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href="#"
+                        href="/contact"
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
@@ -122,7 +122,7 @@ function NavBar() {
                   <Menu.Item>
                     {({ active }) => (
                       <a
-                        href="#"
+                        href="/404"
                         className={classNames(
                           active
                             ? "bg-gray-100 text-gray-900"
