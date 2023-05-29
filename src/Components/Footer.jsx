@@ -7,9 +7,8 @@ const Footer = () => {
             <img
               src="./src/Logo/Logo-blanco-01.svg"
               className="h-5 mr-3"
-              alt="Flowbite Logo"
+              alt="Travellive Logo"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 dark:text-white">
             <li>
@@ -36,9 +35,9 @@ const Footer = () => {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-secondary4 lg:my-8" />
         <div className="flex gap-4 text-blue-gray-900 sm:justify-center mb-5">
-          <a href="#">
+          <a href="https://www.facebook.com/" target="_blank">
             <svg
-              className="h-5 w-5 text-secondary4"
+              className="h-5 w-5 text-secondary4 hover:text-blue-500 hover:rounded"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -51,9 +50,9 @@ const Footer = () => {
               />
             </svg>
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/" target="_blank">
             <svg
-              className="h-5 w-5 text-secondary4"
+              className="h-5 w-5 text-secondary4 hover:text-pink-500 hover:rounded"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -67,9 +66,9 @@ const Footer = () => {
             </svg>
           </a>
 
-          <a href="#">
+          <a href="https://www.twitter.com/" target="_blank">
             <svg
-              className="h-5 w-5 text-secondary4"
+              className="h-5 w-5 text-secondary4 hover:text-blue-400 hover:rounded"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -79,9 +78,9 @@ const Footer = () => {
             </svg>
           </a>
 
-          <a href="#">
+          <a href="https://www.githubq.com/" target="_blank">
             <svg
-              className="h-5 w-5 text-secondary4"
+              className="h-5 w-5 text-secondary4 hover:text-black hover:rounded"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -95,9 +94,9 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-white">
+        <span className="block text-sm text-white sm:text-center dark:text-white">
           © 2023{" "}
-          <a href="#" className="hover:underline">
+          <a href="/" className="hover:underline">
             Travellive™
           </a>
           . All Rights Reserved.

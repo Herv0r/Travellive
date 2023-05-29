@@ -10,7 +10,7 @@ const posts = [
     category: { title: "Tourism", href: "#" },
     author: {
       name: "Sofia Rodriguez",
-      role: "Guest",
+      role: "Invitado",
       href: "#",
       imageUrl:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
@@ -27,7 +27,7 @@ const posts = [
     category: { title: "Traveling", href: "#" },
     author: {
       name: "Michael Modric",
-      role: "Tourist",
+      role: "Turista",
       href: "#",
       imageUrl:
         "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80",
@@ -44,7 +44,7 @@ const posts = [
     category: { title: "Experience", href: "#" },
     author: {
       name: "Liam Thompson",
-      role: "Tourist",
+      role: "Turista",
       href: "#",
       imageUrl:
         "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",

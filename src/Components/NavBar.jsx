@@ -17,7 +17,6 @@ function NavBar() {
             alt="Travellive Logo"
           />
         </a>
-
         <div
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="mobile-menu-2"

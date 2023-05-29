@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Modal from './Modal';
+import Modal from './Login';
 import '../App.css'
 
 const Header = () => {
@@ -42,7 +42,6 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
@@ -67,7 +66,7 @@ const Header = () => {
           <div className="hidden sm:mb-8 sm:flex sm:justify-center">
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-Raleway tracking-tight text-black sm:text-6xl">
+            <h1 className="text-4xl font-Raleway tracking-tight text-secondary2 sm:text-6xl">
             Vive la experiencia de tu vida
             </h1>
             <p className="font-Nunito mt-6 pt-4 text-lg leading-8 text-primary3">

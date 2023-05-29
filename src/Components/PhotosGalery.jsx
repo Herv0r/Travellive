@@ -26,7 +26,8 @@ const products = [
     href: '#',
     imageSrc: 'https://a0.muscache.com/im/pictures/51f4d564-3273-4f25-843d-54e17f6a8783.jpg?im_w=720',
     imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-  },{
+  },
+  {
     id: 5,
     name: 'Adamantas, Grecia',
     href: '#',

@@ -13,7 +13,6 @@ function App() {
     {
       url: '../src/Images/carrusel3.jpg',
     },
-
     {
       url: '../src/Images/carrusel4.jpg',
     },

@@ -16,7 +16,7 @@ const TeamSection = () => {
     {
       name: "Lucas Albornoz",
       occupation:
-        "Web Developer, Software Developer, Python developer, Machine Learning",
+        "Python developer, Machine Learning, Software Engineer",
       image:
         "../src/Images/Lucas.jpg",
       socialMedia: {
