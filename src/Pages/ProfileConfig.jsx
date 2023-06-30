@@ -1,23 +1,43 @@
-import { PhotographIcon, UserCircleIcon } from '@heroicons/react/solid'
+import { PhotographIcon, UserCircleIcon } from "@heroicons/react/solid";
+import NavBar from "../Components/Nav/NavBar";
 
-export default function Profile() {
+const ProfileConfig = () => {
   return (
-    <form className='m-20'>
+    <>
+      <NavBar />
+      <Profile />
+    </>
+  );
+};
+
+export default ProfileConfig;
+
+function Profile() {
+  return (
+    <form className="m-20">
       <div className="space-y-12">
         <div className="border-b border-gray-900/10 pb-12">
-          <h2 className="text-base font-semibold leading-7 text-gray-900">Perfil</h2>
+          <h2 className="text-base font-semibold leading-7 text-gray-900">
+            Perfil
+          </h2>
           <p className="mt-1 text-sm leading-6 text-gray-600">
-            Esta informacion se mostrara pública asi que ten cuidado con lo que compartes.
+            Esta informacion se mostrara pública asi que ten cuidado con lo que
+            compartes.
           </p>
 
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-4">
-              <label htmlFor="username" className="block text-sm font-medium leading-6 text-gray-900">
+              <label
+                htmlFor="username"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
                 Nombre de usuario
               </label>
               <div className="mt-2">
                 <div className="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-secondary3 sm:max-w-md">
-                  <span className="flex select-none items-center pl-3 text-gray-500 sm:text-sm">Travellive.com/</span>
+                  <span className="flex select-none items-center pl-3 text-gray-500 sm:text-sm">
+                    Travellive.com/
+                  </span>
                   <input
                     type="text"
                     name="username"
@@ -31,7 +51,10 @@ export default function Profile() {
             </div>
 
             <div className="col-span-full">
-              <label htmlFor="about" className="block text-sm font-medium leading-6 text-gray-900">
+              <label
+                htmlFor="about"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
                 Acerca
               </label>
               <div className="mt-2">
@@ -40,18 +63,26 @@ export default function Profile() {
                   name="about"
                   rows={3}
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus-within:ring-secondary3 sm:text-sm sm:leading-6"
-                  defaultValue={''}
+                  defaultValue={""}
                 />
               </div>
-              <p className="mt-3 text-sm leading-6 text-gray-600">Escribe una corta descripción acerca de ti.</p>
+              <p className="mt-3 text-sm leading-6 text-gray-600">
+                Escribe una corta descripción acerca de ti.
+              </p>
             </div>
 
             <div className="col-span-full">
-              <label htmlFor="photo" className="block text-sm font-medium leading-6 text-gray-900">
+              <label
+                htmlFor="photo"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
                 Foto
               </label>
               <div className="mt-2 flex items-center gap-x-3">
-                <UserCircleIcon className="h-12 w-12 text-gray-300" aria-hidden="true" />
+                <UserCircleIcon
+                  className="h-12 w-12 text-gray-300"
+                  aria-hidden="true"
+                />
                 <button
                   type="button"
                   className="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
@@ -62,23 +93,36 @@ export default function Profile() {
             </div>
 
             <div className="col-span-full">
-              <label htmlFor="cover-photo" className="block text-sm font-medium leading-6 text-gray-900">
+              <label
+                htmlFor="cover-photo"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
                 Foto de portada
               </label>
               <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
                 <div className="text-center">
-                  <PhotographIcon className="mx-auto h-12 w-12 text-gray-300" aria-hidden="true" />
+                  <PhotographIcon
+                    className="mx-auto h-12 w-12 text-gray-300"
+                    aria-hidden="true"
+                  />
                   <div className="mt-4 flex text-sm leading-6 text-gray-600">
                     <label
                       htmlFor="file-upload"
                       className="relative cursor-pointer rounded-md bg-white font-semibold text-secondary3 focus-within:outline-none focus-within:ring-2 focus-within:ring-secondary3 focus-within:ring-offset-2 hover:text-secondary3"
                     >
                       <span>Sube un archivo</span>
-                      <input id="file-upload" name="file-upload" type="file" className="sr-only" />
+                      <input
+                        id="file-upload"
+                        name="file-upload"
+                        type="file"
+                        className="sr-only"
+                      />
                     </label>
                     <p className="pl-1">o arrastra y suelta</p>
                   </div>
-                  <p className="text-xs leading-5 text-gray-600">PNG, JPG, GIF hasta 10MB</p>
+                  <p className="text-xs leading-5 text-gray-600">
+                    PNG, JPG, GIF hasta 10MB
+                  </p>
                 </div>
               </div>
             </div>
@@ -86,12 +130,19 @@ export default function Profile() {
         </div>
 
         <div className="border-b border-gray-900/10 pb-12">
-          <h2 className="text-base font-semibold leading-7 text-gray-900">Información Personal </h2>
-          <p className="mt-1 text-sm leading-6 text-gray-600">Usa una direccion permanente donde puedas recibir emails.</p>
+          <h2 className="text-base font-semibold leading-7 text-gray-900">
+            Información Personal{" "}
+          </h2>
+          <p className="mt-1 text-sm leading-6 text-gray-600">
+            Usa una direccion permanente donde puedas recibir emails.
+          </p>
 
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div className="sm:col-span-3">
-              <label htmlFor="first-name" className="block text-sm font-medium leading-6 text-gray-900">
+              <label
+                htmlFor="first-name"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
                 Nombre
               </label>
               <div className="mt-2">
@@ -106,7 +157,10 @@ export default function Profile() {
             </div>
 
             <div className="sm:col-span-3">
-              <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
+              <label
+                htmlFor="last-name"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
                 Apellido
               </label>
               <div className="mt-2">
@@ -121,7 +175,10 @@ export default function Profile() {
             </div>
 
             <div className="sm:col-span-4">
-              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
                 Email
               </label>
               <div className="mt-2">
@@ -136,7 +193,10 @@ export default function Profile() {
             </div>
 
             <div className="sm:col-span-3">
-              <label htmlFor="country" className="block text-sm font-medium leading-6 text-gray-900">
+              <label
+                htmlFor="country"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
                 País
               </label>
               <div className="mt-2">
@@ -158,8 +218,11 @@ export default function Profile() {
             </div>
 
             <div className="col-span-full">
-              <label htmlFor="street-address" className="block text-sm font-medium leading-6 text-gray-900">
-                Dirección 
+              <label
+                htmlFor="street-address"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
+                Dirección
               </label>
               <div className="mt-2">
                 <input
@@ -173,7 +236,10 @@ export default function Profile() {
             </div>
 
             <div className="sm:col-span-2 sm:col-start-1">
-              <label htmlFor="city" className="block text-sm font-medium leading-6 text-gray-900">
+              <label
+                htmlFor="city"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
                 Ciudad
               </label>
               <div className="mt-2">
@@ -188,7 +254,10 @@ export default function Profile() {
             </div>
 
             <div className="sm:col-span-2">
-              <label htmlFor="region" className="block text-sm font-medium leading-6 text-gray-900">
+              <label
+                htmlFor="region"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
                 Estado / Provincia
               </label>
               <div className="mt-2">
@@ -203,7 +272,10 @@ export default function Profile() {
             </div>
 
             <div className="sm:col-span-2">
-              <label htmlFor="postal-code" className="block text-sm font-medium leading-6 text-gray-900">
+              <label
+                htmlFor="postal-code"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
                 ZIP / Código Postal
               </label>
               <div className="mt-2">
@@ -220,14 +292,19 @@ export default function Profile() {
         </div>
 
         <div className="border-b border-gray-900/10 pb-12">
-          <h2 className="text-base font-semibold leading-7 text-gray-900">Notificaciones</h2>
+          <h2 className="text-base font-semibold leading-7 text-gray-900">
+            Notificaciones
+          </h2>
           <p className="mt-1 text-sm leading-6 text-gray-600">
-            Siempre te haremos saber sobre cambios importantes, pero selecciona lo que quieres oir.
+            Siempre te haremos saber sobre cambios importantes, pero selecciona
+            lo que quieres oir.
           </p>
 
           <div className="mt-10 space-y-10">
             <fieldset>
-              <legend className="text-sm font-semibold leading-6 text-gray-900">Por Email</legend>
+              <legend className="text-sm font-semibold leading-6 text-gray-900">
+                Por Email
+              </legend>
               <div className="mt-6 space-y-6">
                 <div className="relative flex gap-x-3">
                   <div className="flex h-6 items-center">
@@ -239,10 +316,16 @@ export default function Profile() {
                     />
                   </div>
                   <div className="text-sm leading-6">
-                    <label htmlFor="comments" className="font-medium text-gray-900">
+                    <label
+                      htmlFor="comments"
+                      className="font-medium text-gray-900"
+                    >
                       Comentarios
                     </label>
-                    <p className="text-gray-500">Sé notificado cuando alquien postee un comentario en un posting.</p>
+                    <p className="text-gray-500">
+                      Sé notificado cuando alquien postee un comentario en un
+                      posting.
+                    </p>
                   </div>
                 </div>
                 <div className="relative flex gap-x-3">
@@ -255,10 +338,15 @@ export default function Profile() {
                     />
                   </div>
                   <div className="text-sm leading-6">
-                    <label htmlFor="candidates" className="font-medium text-gray-900">
+                    <label
+                      htmlFor="candidates"
+                      className="font-medium text-gray-900"
+                    >
                       Candidatos
                     </label>
-                    <p className="text-gray-500">Sé notificado cuando un candidato aplique a un trabajo.</p>
+                    <p className="text-gray-500">
+                      Sé notificado cuando un candidato aplique a un trabajo.
+                    </p>
                   </div>
                 </div>
                 <div className="relative flex gap-x-3">
@@ -271,17 +359,27 @@ export default function Profile() {
                     />
                   </div>
                   <div className="text-sm leading-6">
-                    <label htmlFor="offers" className="font-medium text-gray-900">
+                    <label
+                      htmlFor="offers"
+                      className="font-medium text-gray-900"
+                    >
                       Ofertas
                     </label>
-                    <p className="text-gray-500">Sé notificado cuando un candidato rechaze o acepte tu oferta.</p>
+                    <p className="text-gray-500">
+                      Sé notificado cuando un candidato rechaze o acepte tu
+                      oferta.
+                    </p>
                   </div>
                 </div>
               </div>
             </fieldset>
             <fieldset>
-              <legend className="text-sm font-semibold leading-6 text-gray-900">Notificaciones Push</legend>
-              <p className="mt-1 text-sm leading-6 text-gray-600">Estas son enviadas por SMS hacia tu celular.</p>
+              <legend className="text-sm font-semibold leading-6 text-gray-900">
+                Notificaciones Push
+              </legend>
+              <p className="mt-1 text-sm leading-6 text-gray-600">
+                Estas son enviadas por SMS hacia tu celular.
+              </p>
               <div className="mt-6 space-y-6">
                 <div className="flex items-center gap-x-3">
                   <input
@@ -290,7 +388,10 @@ export default function Profile() {
                     type="radio"
                     className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                   />
-                  <label htmlFor="push-everything" className="block text-sm font-medium leading-6 text-gray-900">
+                  <label
+                    htmlFor="push-everything"
+                    className="block text-sm font-medium leading-6 text-gray-900"
+                  >
                     Todo
                   </label>
                 </div>
@@ -301,7 +402,10 @@ export default function Profile() {
                     type="radio"
                     className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                   />
-                  <label htmlFor="push-email" className="block text-sm font-medium leading-6 text-gray-900">
+                  <label
+                    htmlFor="push-email"
+                    className="block text-sm font-medium leading-6 text-gray-900"
+                  >
                     Mismas que el Email
                   </label>
                 </div>
@@ -312,7 +416,10 @@ export default function Profile() {
                     type="radio"
                     className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                   />
-                  <label htmlFor="push-nothing" className="block text-sm font-medium leading-6 text-gray-900">
+                  <label
+                    htmlFor="push-nothing"
+                    className="block text-sm font-medium leading-6 text-gray-900"
+                  >
                     No recibir notificaciones push
                   </label>
                 </div>
@@ -323,17 +430,21 @@ export default function Profile() {
       </div>
 
       <div className="mt-6 flex items-center justify-end gap-x-6">
-        <button type="button" className="text-sm font-semibold leading-6 text-gray-900">
-        <a href='/inicio'>Cancelar</a> 
+        <button
+          type="button"
+          className="text-sm font-semibold leading-6 text-gray-900"
+        >
+          <a href="/inicio">Cancelar</a>
         </button>
         <button
           type="submit"
           className="rounded-md bg-secondary3 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-secondary2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-within:ring-secondary3"
         >
-        <a href='/inicio' onClick={() => alert('Cambios guardados')}>
-            Guardar</a> 
+          <a href="/inicio" onClick={() => alert("Cambios guardados")}>
+            Guardar
+          </a>
         </button>
       </div>
     </form>
-  )
+  );
 }
