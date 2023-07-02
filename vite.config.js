@@ -1,7 +1,20 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import copy from 'rollup-plugin-copy';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+  build: {
+    rollupOptions: {
+      input: {
+        main: './index.html',
+      },
+      plugins: [
+        copy({
+          targets: [
+            { src: 'src/Images', dest: 'dist/src/Images' },
+            { src: 'src/Pages', dest: 'dist/src/Pages' },
+          ],
+        }),
+      ],
+    },
+  },
+});
